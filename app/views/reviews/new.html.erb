@@ -1,0 +1,7 @@
+<p>create a new review</p>
+
+<%= simple_form_for (@review) do |r| %>
+  <%= r.input :content %>
+  <%= r.input :rating, collection: [0, 1, 2, 3, 4, 5] %>
+  <%= r.submit %>
+<% end %>
